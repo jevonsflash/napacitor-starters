@@ -1,0 +1,8 @@
+{
+  "appId": "com.napacitor.demo",
+  "appName": "Napacitor Demo",
+  "webDir": "src",
+  "maui": {
+    "hostDir": "maui"
+  }
+}

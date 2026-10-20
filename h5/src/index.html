@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Napacitor Demo</title>
+    <style>
+        body { font-family: -apple-system, "PingFang SC", sans-serif; margin: 20px; background: #fafafa; color: #222; }
+        h1 { font-size: 20px; margin: 4px 0 14px; }
+        .card { background: #fff; border: 1px solid #e2e2e2; border-radius: 12px; padding: 12px 16px; margin: 10px 0; }
+        .row { display: flex; justify-content: space-between; font-size: 14px; line-height: 2; }
+        .row span { color: #888; }
+        .row b { font-weight: 600; }
+        .hint { color: #999; font-size: 12px; margin-top: 6px; }
+        button { margin: 6px 6px 0 0; padding: 10px 16px; border-radius: 8px; border: 0; background: #512BD4; color: #fff; font-size: 15px; }
+        #status { color: #555; font-size: 13px; margin-top: 10px; word-break: break-all; }
+    </style>
+</head>
+<body>
+    <h1>Napacitor Demo</h1>
+    <div id="device-info" class="card"></div>
+    <div id="battery" class="card"></div>
+    <div class="card">
+        <button id="copy-btn">写入剪贴板</button>
+        <button id="read-btn" style="background:#6f42c1">读取剪贴板</button>
+        <button id="share-btn" style="background:#2f9e44">分享文本</button>
+        <button id="vibrate-btn" style="background:#e8590c">震动</button>
+        <div id="status">初始化…</div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

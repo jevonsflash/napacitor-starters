@@ -1,0 +1,22 @@
+{
+  "name": "napacitor-demo",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Napacitor 最小演示应用:调用全部内置插件,走完整 nap 工作流",
+  "scripts": {
+    "sync": "nap sync",
+    "run:ios": "nap run --target ios"
+  },
+  "dependencies": {
+    "@napacitor/battery": "0.1.2-beta.3",
+    "@napacitor/clipboard": "0.1.2-beta.3",
+    "@napacitor/device": "0.1.2-beta.3",
+    "@napacitor/haptics": "0.1.2-beta.3",
+    "@napacitor/maui": "0.1.2-beta.3",
+    "@napacitor/share": "0.1.2-beta.3"
+  },
+  "devDependencies": {
+    "@napacitor/cli": "0.1.2-beta.4",
+    "@napacitor/core": "0.1.2-beta.3"
+  }
+}
