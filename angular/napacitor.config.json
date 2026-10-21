@@ -1,0 +1,8 @@
+{
+  "appId": "com.example.napacitor",
+  "appName": "Napacitor Angular Starter",
+  "webDir": "dist",
+  "maui": {
+    "hostDir": "maui"
+  }
+}

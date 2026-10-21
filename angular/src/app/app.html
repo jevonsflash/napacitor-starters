@@ -1,0 +1,25 @@
+<main class="app">
+  <header class="app-header">
+    <img src="/napacitor.svg" class="logo" alt="Napacitor" />
+    <div>
+      <h1>Napacitor Angular Starter</h1>
+      <p class="subtitle">Capacitor 式工作流,.NET MAUI Blazor 原生宿主</p>
+    </div>
+    <span class="badge" [class.native]="native">
+      {{ platform }}{{ native ? ' · native' : ' · web' }}
+    </span>
+  </header>
+
+  <div class="grid">
+    <app-device-card />
+    <app-clipboard-card />
+    <app-haptics-card />
+    <app-share-card />
+    <app-battery-card />
+  </div>
+
+  <footer class="app-footer">
+    core version <code>{{ coreVersion }}</code> · bridge platform
+    <code>{{ platform }}</code>
+  </footer>
+</main>

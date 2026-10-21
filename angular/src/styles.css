@@ -1,0 +1,215 @@
+/* 全局基础样式(与 react/vue starter 的 index.css 对应) */
+:root {
+  font-family: 'Segoe UI', system-ui, -apple-system, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: #f4f6fa;
+  color: #1c2333;
+}
+
+/* 应用布局与组件样式(与 react/vue starter 的 App.css 对应) */
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+}
+
+.app-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.logo {
+  width: 56px;
+  height: 56px;
+}
+
+.app-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.subtitle {
+  margin: 4px 0 0;
+  color: #5c6470;
+  font-size: 14px;
+}
+
+.badge {
+  margin-left: auto;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  background: #eef1f6;
+  color: #3880ff;
+  border: 1px solid #d5dbe6;
+  white-space: nowrap;
+}
+
+.badge.native {
+  background: #e8f7ee;
+  color: #10a54a;
+  border-color: #bfe8cf;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 16px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e4e8ef;
+  border-radius: 14px;
+  padding: 18px 20px;
+  box-shadow: 0 1px 3px rgb(16 24 40 / 5%);
+}
+
+.card h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.card .subtitle {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 12px 0 4px;
+}
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 14px;
+  font-size: 13px;
+  cursor: pointer;
+  background: #3880ff;
+  color: #fff;
+  transition: filter 0.15s;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+button.ghost {
+  background: #f0f3f9;
+  color: #2b3242;
+}
+
+button.danger {
+  background: #e5484d;
+}
+
+input {
+  border: 1px solid #d5dbe6;
+  border-radius: 8px;
+  padding: 8px 10px;
+  font-size: 13px;
+  min-width: 0;
+  flex: 1;
+}
+
+.kv {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 4px 14px;
+  margin: 12px 0 0;
+  font-size: 13px;
+}
+
+.kv dt {
+  color: #5c6470;
+  margin: 0;
+}
+
+.kv dd {
+  margin: 0;
+  font-family: ui-monospace, Consolas, monospace;
+  word-break: break-all;
+}
+
+.result {
+  font-size: 13px;
+  margin: 10px 0 0;
+}
+
+.result code,
+.app-footer code {
+  background: #f0f3f9;
+  border-radius: 4px;
+  padding: 1px 6px;
+}
+
+.error {
+  color: #e5484d;
+  font-size: 13px;
+  margin: 10px 0 0;
+}
+
+.hint {
+  color: #8a93a3;
+  font-size: 12px;
+  margin: 10px 0 0;
+}
+
+.battery {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 14px;
+  font-size: 13px;
+}
+
+.battery-shell {
+  width: 160px;
+  height: 16px;
+  border: 1px solid #c9d2e0;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.battery-level {
+  height: 100%;
+  border-radius: 2px;
+  background: #10a54a;
+  transition: width 0.3s;
+}
+
+.battery-level.charging {
+  background: #3880ff;
+}
+
+.app-footer {
+  margin-top: 28px;
+  text-align: center;
+  color: #8a93a3;
+  font-size: 12px;
+}

@@ -1,0 +1,8 @@
+{
+  "appId": "com.example.napacitor",
+  "appName": "Napacitor Vue Starter",
+  "webDir": "dist",
+  "maui": {
+    "hostDir": "maui"
+  }
+}
